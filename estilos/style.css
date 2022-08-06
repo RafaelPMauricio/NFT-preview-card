@@ -4,6 +4,8 @@
 
 *{
     font-family: 'Outfit', sans-serif;
+    margin: 0;
+    padding: 0;
 }
 
 html,body{
@@ -13,9 +15,85 @@ html,body{
 div{
     background-color: hsl(216, 50%, 16%);
     margin: auto;
-    width: 500px;
-    
+    max-width: 300px;
+    border-radius: 15px;
+    padding: 15px;
+    margin-top: 50px;
 }
 
-.attribution { font-size: 11px; text-align: center; }
+div > div{
+    margin: 0;
+    padding: 0;
+    background-color: cyan;
+    position: relative;
+}
+
+h1{
+    font-size: 1.45em;
+    padding: 10px 0;
+}
+
+p{
+    font-size: 18px;
+    padding: 10px 0;
+    color: hsl(215, 51%, 70%);
+}
+
+#valor{
+    color: cyan;
+    padding-left: 5px;
+}
+
+#tempo{
+    text-align: right;
+    padding-left: 90px;
+}
+
+#valor, #tempo{
+    display: inline-block;
+}
+
+img#equilibrium{
+    max-width: 100%;
+    display: block;
+    margin: auto;
+    border-radius: 15px;
+    transition: .5s ease;
+    backface-visibility: hidden;
+}
+
+img#view{
+    position: absolute;
+    top: 42%;
+    left: 42%;
+    opacity: 0;
+}
+
+div > div:hover #equilibrium{
+    opacity: 0.5;
+}
+
+div > div:hover #view{
+    opacity: 1;
+}
+
+p > img#credit{
+    border: 1px solid white;
+    border-radius: 50%;
+    width: 25px;
+}
+
+a{
+    text-decoration: none;
+}
+
+.hover{
+    color: white;
+}
+
+.hover:hover{
+    color: cyan;
+}
+
+.attribution { font-size: 11px; text-align: center; color: white;}
 .attribution a { color: hsl(228, 45%, 44%); }
